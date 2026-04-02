@@ -1,0 +1,19 @@
+[
+  {
+    "id":1,
+    "title":"Hamlet",
+    "description": "A Shakespearean tragedy about the Prince of Denmark.",
+    "venue": "Royal Theatre",
+    "yearPublished": 1603,
+    "image": "hamlet.jpg"
+  },
+
+  {
+    "id": 2,
+    "title": "The Phantom of the Opera",
+    "description": "A musical about a mysterious figure haunting the Paris Opera House.",
+    "venue": "Majestic Theatre",
+    "yearPublished": 1986,
+    "image": "phantom.jpg"
+  }
+]

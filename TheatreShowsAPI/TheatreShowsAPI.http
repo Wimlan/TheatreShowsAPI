@@ -1,0 +1,39 @@
+@rootURL = http://localhost:5215
+
+
+
+GET {{rootURL}}/api/shows/
+Accept: application/json
+
+
+###
+GET {{rootURL}}/api/shows/2
+Accept: application/json
+
+###
+POST {{rootURL}}/api/shows
+content-type: application/json
+{
+  "id": 3,
+  "title": "New Theatre Show",
+  "description": "A spectacular new show to celebrate the holiday season.",
+  "venue": "Grand Theatre",
+  "yearPublished": "2024",
+  "image": "show.jpg"
+}
+
+###
+PUT {{rootURL}}/api/shows
+content-type: application/json
+{
+  "id": 2,
+  "title": "Updated Theatre Show",
+  "description": "An updated description for the spectacular new show."
+  "venue": "Grand Theatre",
+  "yearPublished": "2025",
+  "image" : "updated.jpg"
+}
+
+###
+DELETE {{rootURL}}/api/ahows/1
+
