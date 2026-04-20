@@ -1,0 +1,26 @@
+﻿@page "/"
+@using SampleTestUI.Models
+@inject HttpClient http
+
+<PageTitle>Shows</PageTitle>
+
+<h1>All Shows</h1>
+
+@if(shows is not null)
+{
+    @foreach(var s in shows)
+    {
+        <h1>@s.Title</h1>
+            <img width="300" src="@s.Image" />
+
+    }
+}
+
+@code{
+    private List<ShowModel>? shows;
+
+    protected override async Task OnInitializedAsync()
+    {
+        shows = await http.GetFromJsonAsync<List<ShowModel>>("https://localhost:7048/shows");
+    }
+}
