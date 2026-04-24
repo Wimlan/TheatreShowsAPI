@@ -8,12 +8,11 @@ namespace TheatreShowsAPI.Startup
     {
         public static void AddDependencies(this WebApplicationBuilder builder) 
         {
-            // Add services to the container.
-            builder.Services.AddControllers();
+            
 
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApiServices();
-
+            builder.Services.AddCorsServices();
             builder.Services.AddTransient<ShowData>();
         }
     }

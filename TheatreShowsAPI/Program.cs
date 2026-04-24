@@ -2,20 +2,31 @@ using Scalar.AspNetCore;
 using TheatreShowsAPI.Endpoints;
 using TheatreShowsAPI.Startup;
 
-var builder = WebApplication.CreateBuilder(args);
+namespace TheatreShowsAPI
+{
+    public static class Program
+    {
+        public static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
 
-builder.AddDependencies();
+            builder.AddDependencies();
 
-var app = builder.Build();
+            var app = builder.Build();
 
-app.UseOpenApi();
+            app.UseOpenApi();
 
-app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
-app.AddRootEndpoints();
+            app.ApplyCorsConfig();
 
-app.AddShowEndpoints();
+            app.AddRootEndpoints();
 
-app.UseAuthorization();
+            app.AddShowEndpoints();
 
-app.Run();
+            //app.UseAuthorization();
+
+            app.Run();
+        }
+    }
+}

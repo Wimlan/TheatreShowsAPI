@@ -1,21 +1,283 @@
 [
   {
     "id": 1,
-    "title": "Hamlet",
-    "description": "A Shakespearean tragedy about the Prince of Denmark.",
-    "showType": "tragedy",
-    "venue": "Royal Theatre",
-    "yearPublished": 1603,
-    "image": "https://images.unsplash.com/photo-1503095396549-807759245b35?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGhlYXRyZXxlbnwwfHwwfHx8MA%3D%3D"
+    "title": "Stolthet och fördom",
+    "subHeading": "En ikonisk rom-com om att gå vilse i sig själv och kärleken",
+    "description":
+      "Elizabeth Bennet är en smart och självständig ung tjej på väg ut i livet – fast besluten att vara sig själv trogen och göra rätt val när det kommer till kärlek. Hennes första möte med den introverte Mr Darcy gör henne förvirrad. Arrogant, men han har något visst ändå.",
+    "showType": [ "romantisk", "komedi", "drama" ],
+    "venue": "Göteborgs Stadsteater, Göteborg",
+    "yearPublished": 2026,
+    "productionMembers": [
+      { "by": [ "Robert Shearman" ] },
+      { "adaptation": [ "Ragna Wei" ] },
+      { "director": [ "Ragna Wei" ] },
+      { "scenography": [ "Helga Bumsch" ] },
+      { "cast": [ "Beata Hedman", "Christoffer Svensson", "Carina M Johansson", "Johan Friberg", "Oméya Simbizi" ] }
+    ],
+    "trailer": "https://vimeo.com/1142046861",
+    "image": "https://stadsteatern.goteborg.se/globalassets/pa-scen/2025-2026/stolthet-och-fordom/bildspel/02.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Joyride – The Musical",
+    "subHeading": "En oförglömlig bergochdalbana full av Roxettes musik",
+    "description": 
+      "Världspremiär för musikalen Joyride, baserad på Roxettes låtskatt. En feelgood-berättelse om kärlek, vänskap och att våga leva livet fullt ut."
+    ,
+    "showType": [ "musikal", "feelgood", "pop" ],
+    "venue": "Malmö Opera, Malmö",
+    "yearPublished": 2024,
+    "productionMembers": [
+      { "music": [ "Per Gessle" ] },
+      { "script": [ "Klas Abrahamsson" ] },
+      { "director": [ "Guy Unsworth" ] },
+      { "scenography": [ "David Woodhead" ] },
+      { "cast": [ "Jessica Marberger", "Alexander Lycke", "Emilie Evbäck", "Oscar Pierrou Lindén" ] }
+    ],
+    "trailer": "https://www.youtube.com/watch?v=kKzTxidSbOc",
+    "image": "https://www.malmoopera.se/sites/default/files/styles/hero_performance_md_2x/public/2025-11/topp-joyride26.webp?itok=RY3BFbHz"
+  },
+  {
+    "id": 3,
+    "title": "& Julia",
+    "subHeading": "Tänk om Julia inte dog på slutet?",
+    "description": 
+      "En fartfylld musikal som vänder upp och ner på Shakespeares klassiker till tonerna av Max Martins största pophits."
+    ,
+    "showType": [ "musikal", "pop", "komedi" ],
+    "venue": "Cirkus, Stockholm",
+    "yearPublished": 2026,
+    "productionMembers": [
+      { "music": [ "Max Martin" ] },
+      { "script": [ "David West Read" ] },
+      { "director": [ "Luke Sheppard" ] },
+      { "choreography": [ "Jennifer Weber" ] },
+      { "cast": [ "Joanné Nugas", "Oscar Zia", "Sussie Eriksson", "Rennie Mirro", "Linda Olsson" ] }
+    ],
+    "trailer": "https://www.youtube.com/watch?v=vSkr3gz1de0",
+    "image": "https://www.ochjuliamusikalen.se/wp-content/uploads/2026/02/Julia-1920x1080-Sthlm-Rec_v3-scaled.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Chicago",
+    "subHeading": "Mord, girighet, korruption och jazz!",
+    "description": 
+      "En gnistrande musikalupplevelse fylld av 1920-talsglamour. Följ Roxie Hart och Velma Kelly i kampen om rubrikerna."
+    ,
+    "showType": [ "musikal", "jazz", "satir" ],
+    "venue": "Oscarsteatern, Stockholm",
+    "yearPublished": 2026,
+    "productionMembers": [
+      { "music": [ "John Kander" ] },
+      { "director": [ "Edward af Sillén" ] },
+      { "choreography": [ "Per-Magnus \"PM\" Andersson" ] },
+      { "costume": [ "Camilla Thulin" ] },
+      { "cast": [ "Ellen Lindblad", "Hanna Lindblad", "Peter Jöback", "Ola Forssmed", "Laila Adéle" ] }
+    ],
+    "trailer": "https://www.youtube.com/watch?v=_b3nnlVB0Pc",
+    "image": "https://cdn.sanity.io/images/3553xkck/production/c5ac6dafaf7beaaab0978aaff7001ca1237503d0-1080x1350.jpg?w=640&q=80"
+  },
+  {
+    "id": 5,
+    "title": "Grease",
+    "subHeading": "Musikalen som aldrig slutar locka",
+    "description": 
+      "Läderjackor, brylkräm och oförglömliga hits. Danny och Sandy hittar tillbaka till varandra på Rydell High."
+    ,
+    "showType": [ "musikal", "50-tal", "romantik" ],
+    "venue": "Rondo, Göteborg",
+    "yearPublished": 2026,
+    "productionMembers": [
+      { "director": [ "Klas Wiljergård" ] },
+      { "choreography": [ "Jennie Widegren" ] },
+      { "scenography": [ "takis" ] },
+      { "producer": [ "Nanette Hayes" ] },
+      { "cast": [ "Anton Ewald", "Lovisa Bengtsson", "Anna Mannheimer", "Boris René", "Emil Henrohn" ] }
+    ],
+    "trailer": "https://www.youtube.com/watch?v=Mzcnzc5SN3k",
+    "image": "https://www.liseberg.se/optimized/1080p/399a607b/globalassets/evenemang/rondo/grease-the-musical/lev1920x1080_grease-showtic-hero-2.jpg"
   },
 
   {
-    "id": 2,
-    "title": "The Phantom of the Opera",
-    "description": "A musical about a mysterious figure haunting the Paris Opera House.",
-    "showType": "musical",
-    "venue": "Majestic Theatre",
-    "yearPublished": 1986,
-    "image": "https://images.unsplash.com/photo-1558970439-add78fc68990?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGhlYXRyZXxlbnwwfHwwfHx8MA%3D%3D"
+    "id": 6,
+    "title": "Miss Saigon",
+    "subHeading": "En episk kärlekshistoria i skuggan av krig",
+    "description": 
+      "Berättelsen om den unga vietnamesiska flickan Kim och den amerikanska soldaten Chris. En av världens största musikaler."
+    ,
+    "showType": [ "musikal", "drama", "episk" ],
+    "venue": "Göteborgsoperan, Göteborg",
+    "yearPublished": 2026,
+    "productionMembers": [
+      { "music": [ "Claude-Michel Schönberg" ] },
+      { "lyrics": [ "Alain Boublil" ] },
+      { "director": [ "Edward af Sillén" ] },
+      { "choreography": [ "Roine Söderlundh" ] },
+      { "cast": [ "Feline Andersson", "Timothy Garnham", "Eu Jin Hwang", "Oscar Pierrou Lindén" ] }
+    ],
+    "trailer": "https://www.youtube.com/watch?v=BEIGH5jIRtg",
+    "image": "https://gocmsdev.blob.core.windows.net/qbank/1600w/misss_MB-1601.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Come From Away",
+    "subHeading": "En hjärtevärmande sann historia",
+    "description": 
+      "När 38 plan tvingas landa i en liten stad på Newfoundland efter 11 september-attackerna, förändras livet för alla inblandade."
+    ,
+    "showType": [ "musikal", "drama", "hopp" ],
+    "venue": "Malmö Opera, Malmö",
+    "yearPublished": 2026,
+    "productionMembers": [
+      { "by": [ "Irene Sankoff", "David Hein" ] },
+      { "director": [ "Sissela Kyle" ] },
+      { "choreography": [ "Roine Söderlundh" ] },
+      { "music": [ "Joakim Hallin" ] },
+      { "cast": [ "Gunilla Backman", "Sharon Dyall", "Kerstin Hilldén", "Erik Gullbransson" ] }
+    ],
+    "trailer": "https://www.youtube.com/watch?v=jvqMY784gsU",
+    "image": "https://www.malmoopera.se/sites/default/files/styles/hero_performance_md_2x/public/2025-05/Comefromaway_1920x1080_webb.jpg.webp?itok=GtNdVdfC"
+  },
+  {
+    "id": 8,
+    "title": "Änglagård",
+    "subHeading": "Musikalen baserad på Colin Nutleys succéfilm",
+    "description": 
+      "Fanny och Zac rör om i den lilla byn när de anländer på sin motorcykel för att hämta ut arvet efter Fanny morfar."
+    ,
+    "showType": [ "musikal", "feelgood", "drama" ],
+    "venue": "Oscarsteatern, Stockholm",
+    "yearPublished": 2023,
+    "productionMembers": [
+      { "music": [ "Fredrik Kempe" ] },
+      { "director": [ "Edward af Sillén" ] },
+      { "scenography": [ "Per-Olov Aquilonius" ] },
+      { "costume": [ "Camilla Thulin" ] },
+      { "cast": [ "Helen Sjöholm", "Tommy Körberg", "Tuva B Larsen", "Lindy Larsson" ] }
+    ],
+    "trailer": "https://www.youtube.com/watch?v=jnneqbJ6hFw",
+    "image": "https://svenskateatern.fi/wp-content/uploads/2025/11/Anglagard-hero-dt.png"
+  },
+  {
+    "id": 9,
+    "title": "Misantropen",
+    "subHeading": "Molières komedi i en nyskriven version",
+    "description": 
+      "En bitsk satir om sanning och falskhet i ett samhälle besatt av yta och gillande."
+    ,
+    "showType": [ "komedi", "klassiker", "satir" ],
+    "venue": "Dramaten, Stockholm",
+    "yearPublished": 2026,
+    "productionMembers": [
+      { "by": [ "Molière" ] },
+      { "director": [ "Jens Ohlin" ] },
+      { "scenography": [ "Susanna Hedin" ] },
+      { "costume": [ "Matilda Hyttsten" ] },
+      { "cast": [ "Hannes Meidal", "Sofia Pekkari", "Johan Holmberg", "Omid Khansari", "Lotta Tejle" ] }
+    ],
+    "trailer": "https://www.youtube.com/watch?v=yyTqnwIZZzw",
+    "image": "https://cms.dramaten.se/media/k4hntuya/misan_mb-8410.jpg?width=2048&height=1299&mode=crop"
+  },
+  {
+    "id": 10,
+    "title": "Brott och straff",
+    "subHeading": "Dostojevskijs roman i bearbetning och regi av Oliver Frljić",
+    "description": 
+      "Studenten Raskolnikov bestämmer sig för att råna och döda en hatad pantlånare – dels för att skapa sig ekonomisk frihet, dels för att rädda världen från en ond människa. Men när brottet är begånget bryter han samman och drabbas av skuldkänslor och paranoia. Europas mest provokativa regissör Oliver Frljić kastar publiken in i Raskolnikovs febriga sinnevärld."
+    ,
+    "showType": [ "drama", "klassiker", "tragedi" ],
+    "venue": "Dramaten, Stockholm",
+    "yearPublished": 2023,
+    "productionMembers": [
+      { "by": [ "Fjodor Dostojevskij" ] },
+      { "director": [ "Oliver Frljić" ] },
+      { "scenography": [ "Igor Pauška" ] },
+      { "costume": [ "Zdravka Ivandija Kirigin" ] },
+      { "cast": [ "Gustav Lindh", "Electra Hallman", "Danilo Bejarano", "Nina Dahn", "Gunnel Fred", "Torkel Petersson", "Magnus Roosmann", "Nemanja Stojanović", "Kristina Törnqvist" ] }
+    ],
+    "trailer": "https://www.youtube.com/watch?v=m532HQ1XuWc",
+    "image": "https://cms.dramaten.se/Media/uc1h5pbp/brott_och_straff_3139_cover.jpg?width=1920&height=1080&mode=crop&rxy=0.19968147640916431,0.60133351966843673"
+  },
+  {
+    "id": 11,
+    "title": "Mors dag",
+    "subHeading": "Ett drama i två akter av Alex Schulman",
+    "description": 
+      "Det är mors dag och de tre vuxna sönerna möts i barndomshemmet för att fira modern – mot allas vilja. De bakar en tårta i köket, precis som den gången när fadern levde och firandet slutade i katastrof. Den motvilliga modern, spelad av Helena Bergström, har låst in sig i sovrummet. Pjäsen berättas från två perspektiv över två akter."
+    ,
+    "showType": [ "drama", "familjedrama", "nyskriven" ],
+    "venue": "Dramaten, Stockholm",
+    "yearPublished": 2026,
+    "productionMembers": [
+      { "by": [ "Alex Schulman" ] },
+      { "director": [ "Alex Schulman" ] },
+      { "scenography": [ "Julia Przedmojska" ] },
+      { "costume": [ "Linda Goncalves" ] },
+      { "cast": [ "Helena Bergström", "Peter Viitanen", "Björn Elgerd", "Nils Wetterholm", "David Rangborg" ] }
+    ],
+    "trailer": "https://www.youtube.com/watch?v=9vxdhZOVtDI",
+    "image": "https://cms.dramaten.se/media/wamhh1uy/mors_dag_02613.jpg?width=2048&height=1365&mode=crop"
+  },
+  {
+    "id": 12,
+    "title": "Svindel",
+    "subHeading": "Kärlekens Antarktis revisited av Sara Stridsberg",
+    "description": 
+      "På en plats någonstans efter döden finns Kristina – hon ser tillbaka på livet som var och på livet som det blev utan henne. Omkring henne rör sig mamma, pappa, kärleken Shane, och barnen hon aldrig kan sluta att titta på. En nyskriven pjäs baserad på Sara Stridsbergs roman Kärlekens Antarktis, med Ingela Olsson i huvudrollen."
+    ,
+    "showType": [ "drama", "nyskriven", "tragedi" ],
+    "venue": "Dramaten, Stockholm",
+    "yearPublished": 2025,
+    "productionMembers": [
+      { "by": [ "Sara Stridsberg" ] },
+      { "director": [ "Rebecka Hemse" ] },
+      { "scenography": [ "Jens Sethzman" ] },
+      { "costume": [ "Jenny Ljungberg" ] },
+      { "cast": [ "Ingela Olsson", "Thomas Hanzon", "Rakel Benér Gajdusek", "Doreen Ndagire", "Kristina Törnqvist", "Marcus Vögeli" ] }
+    ],
+    "trailer": "https://www.youtube.com/watch?v=jLTiBHOC_I8",
+    "image": "https://cms.dramaten.se/media/j05kmv11/svindel_9-14.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Yerma",
+    "subHeading": "En samtida, visuell och musikalisk version av Lorcas klassiska pjäs",
+    "description": 
+      "Yerma är besatt av tanken på att få barn. Gift sedan två år tillbaka med läkaren Juan ser hon hur grannkvinnornas magar växer medan hennes eget liv fastnar i tomhet. Det belgiska stjärnskottet Lisaboa Houbrechts gör ett allkonstverk av Lorcas tragedi om begär, kropp och frihet – och låter även Lorca själv ta plats på scenen."
+    ,
+    "showType": [ "tragedi", "klassiker", "drama" ],
+    "venue": "Dramaten, Stockholm",
+    "yearPublished": 2024,
+    "productionMembers": [
+      { "by": [ "Federico García Lorca" ] },
+      { "director": [ "Lisaboa Houbrechts" ] },
+      { "scenography": [ "Clémence Bezat" ] },
+      { "costume": [ "Oumar Dicko" ] },
+      { "cast": [ "Nina Zanjani", "Christoffer Svensson", "Elle Kari Bergenrud", "Ellen Jelinek", "Christopher Lehmann", "Hulda Lind Jóhannsdóttir", "Razmus Nyström" ] }
+    ],
+    "trailer": "https://www.youtube.com/watch?v=wp7c_dvGj7A",
+    "image": "https://cms.dramaten.se/media/onfijwlt/yerma_7127_cover.jpg?width=1920&height=1080&mode=crop&rxy=0.7074195492478385,0.6896456971365218"
+  },
+  {
+    "id": 14,
+    "title": "Kung Lear",
+    "subHeading": "Shakespeares klassiker i bearbetning av Falk Richter",
+    "description": 
+      "Den åldrade kungen vill fördela sitt rike mellan sina tre döttrar – men bara de som bedyrar sin kärlek får en del av kakan. Hans lynniga beslut leder till kaos och maktkamp. I Falk Richters tappning löper ett metaperspektiv parallellt: en ung kvinnlig regissör tar över arbetet med Kung Lear när hennes far, den etablerade regissören, insjuknar."
+    ,
+    "showType": [ "tragedi", "klassiker", "drama" ],
+    "venue": "Dramaten, Stockholm",
+    "yearPublished": 2025,
+    "productionMembers": [
+      { "by": [ "William Shakespeare" ] },
+      { "adaptation": [ "Falk Richter" ] },
+      { "director": [ "Falk Richter" ] },
+      { "scenography": [ "Wolfgang Menardi" ] },
+      { "costume": [ "Zana Bosnjak" ] },
+      { "cast": [ "Peter Andersson", "Erik Ehn", "Victoria Dyrstad", "Electra Hallman", "Karin Franz Körlof", "Magnus Roosmann", "Björn Elgerd", "Alexander Salzberger", "Ana Gil de Melo Nascimento" ] }
+    ],
+    "trailer": "https://www.youtube.com/watch?v=5ixBwClnXUQ",
+    "image": "https://cms.dramaten.se/media/pujjobai/kung_lear_01611.jpg?width=2048&height=1365&mode=crop&rxy=0.6914145063925278,0.5093921728836284"
   }
-]
+  ]

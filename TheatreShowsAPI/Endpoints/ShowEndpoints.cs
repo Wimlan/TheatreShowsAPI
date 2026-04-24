@@ -18,14 +18,13 @@ namespace TheatreShowsAPI.Endpoints
         {
             var output = data.Shows;
             if (string.IsNullOrWhiteSpace(showType) == false)
-            { 
-            output.RemoveAll(x=> string.Compare(
-                x.ShowType,
-                showType, 
-                StringComparison.OrdinalIgnoreCase) != 0);
+            {
+                // ShowType is a List<string> on the model, so check if any entry matches the requested type
+                output.RemoveAll(x => x.ShowType == null ||
+                    !x.ShowType.Any(st => string.Equals(st, showType, StringComparison.OrdinalIgnoreCase)));
             }
 
-            if(string.IsNullOrWhiteSpace(search) == false)
+            if (string.IsNullOrWhiteSpace(search) == false)
             {
                 output.RemoveAll(x => !x.Title.Contains(search, StringComparison.OrdinalIgnoreCase) &&
                 !x.Description.Contains(search, StringComparison.OrdinalIgnoreCase));
