@@ -20,6 +20,8 @@ namespace TheatreShowsAPI
 
             app.ApplyCorsConfig();
 
+            app.MapAllHealthChecks();
+
             app.AddRootEndpoints();
 
             app.AddShowEndpoints();

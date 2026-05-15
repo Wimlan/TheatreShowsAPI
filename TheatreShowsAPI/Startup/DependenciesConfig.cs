@@ -13,6 +13,7 @@ namespace TheatreShowsAPI.Startup
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApiServices();
             builder.Services.AddCorsServices();
+            builder.Services.AddAllHealthChecks();
             builder.Services.AddTransient<ShowData>();
         }
     }
