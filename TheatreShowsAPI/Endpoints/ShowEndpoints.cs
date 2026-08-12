@@ -1,4 +1,5 @@
 ﻿using TheatreShowsAPI.Data;
+using TheatreShowsAPI.Models;
 using Microsoft.AspNetCore.Builder;
 
 namespace TheatreShowsAPI.Endpoints
@@ -11,39 +12,59 @@ namespace TheatreShowsAPI.Endpoints
             app.MapGet("/shows/{id}", LoadShowById);
         }
 
-        private static IResult LoadAllShows(
-            ShowData data,
-            string? showType,
-            string? search) 
+        private static async Task<IResult> LoadAllShows(
+            IShowRepository repository,
+            string? title,
+            string? genre,
+
+            int? delay)
         {
-            var output = data.Shows;
-            if (string.IsNullOrWhiteSpace(showType) == false)
+            var shows = await repository.GetAllAsync();
+            var output = shows.ToList();
+
+            if (string.IsNullOrWhiteSpace(title) == false)
             {
-                // ShowType is a List<string> on the model, so check if any entry matches the requested type
-                output.RemoveAll(x => x.ShowType == null ||
-                    !x.ShowType.Any(st => string.Equals(st, showType, StringComparison.OrdinalIgnoreCase)));
+                output.RemoveAll(x => x.Title.Contains(title, StringComparison.OrdinalIgnoreCase) == false);
             }
 
-            if (string.IsNullOrWhiteSpace(search) == false)
+            if (string.IsNullOrWhiteSpace(genre) == false)
             {
-                output.RemoveAll(x => !x.Title.Contains(search, StringComparison.OrdinalIgnoreCase) &&
-                !x.Description.Contains(search, StringComparison.OrdinalIgnoreCase));
+                output.RemoveAll(x => x.Genres == null ||
+                    !x.Genres.Any(g => g.GenreName.Contains(genre, StringComparison.OrdinalIgnoreCase)));
             }
 
 
-        return Results.Ok(output);
+            if (delay is not null)
+            {
+                if (delay > 300000)
+                {
+                    delay = 300000; // Limit delay to 5 minutes
+                }
+                await Task.Delay((int)delay);
+            }
+
+            return Results.Ok(output);
         }
 
-        private static IResult LoadShowById(ShowData data, int id)
+        private static async Task<IResult> LoadShowById(IShowRepository repository, int id, int? delay)
         {
-            var output = data.Shows.SingleOrDefault(s => s.Id == id);
-            if(output is null)
+            var output = await repository.GetByIdAsync(id);
+
+            if (delay is not null)
+            {
+                if (delay > 300000)
+                {
+                    delay = 300000; // Limit delay to 5 minutes
+                }
+                await Task.Delay((int)delay);
+            }
+
+            if (output is null)
             {
                 return Results.NotFound();
             }
 
             return Results.Ok(output);
-
         }
     }
 }

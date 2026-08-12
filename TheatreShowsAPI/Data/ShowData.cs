@@ -5,7 +5,7 @@ namespace TheatreShowsAPI.Data
 {
     public class ShowData
     {
-        public List<ShowModel> Shows { get; private set; }
+        public List<Show> Shows { get; private set; }
 
         public ShowData() 
         {
@@ -18,7 +18,7 @@ namespace TheatreShowsAPI.Data
         
         string json = File.ReadAllText(filePath);
 
-            Shows = JsonSerializer.Deserialize<List<ShowModel>>(json, options) ?? new List<ShowModel>();
+            Shows = JsonSerializer.Deserialize<List<Show>>(json, options) ?? new List<Show>();
         }
     }
 }

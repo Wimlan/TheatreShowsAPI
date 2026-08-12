@@ -13,7 +13,7 @@ public static class CorsConfig
             options.AddPolicy(SpecificOriginPolicy, policy =>
             {
                 policy
-                    .WithOrigins("https://localhost:7048", "https://localhost:7293", "https://wilmayasuda.se")
+                    .WithOrigins("http://localhost:5173")
                     .AllowAnyMethod()
                     .AllowAnyHeader();
                     // .AllowCredentials(); // enable only if you need cookies/credentials
