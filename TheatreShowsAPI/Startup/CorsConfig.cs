@@ -13,7 +13,7 @@ public static class CorsConfig
             options.AddPolicy(SpecificOriginPolicy, policy =>
             {
                 policy
-                    .WithOrigins("http://localhost:5173")
+                    .WithOrigins("http://localhost:5173", "https://thetheatrelibrary.onrender.com")
                     .AllowAnyMethod()
                     .AllowAnyHeader();
                     // .AllowCredentials(); // enable only if you need cookies/credentials
@@ -24,6 +24,6 @@ public static class CorsConfig
     public static void ApplyCorsConfig(this WebApplication app)
     {
          app.UseCors(SpecificOriginPolicy);
-        
+
     }
 }
