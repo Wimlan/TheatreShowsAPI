@@ -18,7 +18,10 @@ namespace TheatreShowsAPI
 
         public async Task<Show?> GetByIdAsync(int id)
         {
-            return await _context.Shows.FindAsync(id);
+            return await _context.Shows
+                .Include(s => s.Genres)
+                .Include(s => s.ProductionMembers)
+                .FirstOrDefaultAsync(s => s.Id == id);
         }
     }
 }
